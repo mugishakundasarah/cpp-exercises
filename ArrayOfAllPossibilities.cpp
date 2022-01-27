@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
+/*
+    An array is of all possibilities  if  
+    it contains all numbers between 0 and n - 1 inclusive. 
+    Write a method named isAllPossibilities that accepts an integer
+     array and returns 1 if the array is an array of all possibilities
+     , otherwise it returns 0.
+*/
+
 int checkAllPossibilities(int *arr, int size){
     int i = 0;
     int flag = 0;  
