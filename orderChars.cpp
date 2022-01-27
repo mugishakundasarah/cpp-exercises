@@ -3,8 +3,7 @@ using namespace std;
 
 
 char* orderChars(char *arr, int start, int len, int size){
-    
-    if (start < 0 || (size - start) < len )
+    if (start < 0 || (size - start) < len || start >= len)
     {
         return NULL;
     }
@@ -33,7 +32,7 @@ char* orderChars(char *arr, int start, int len, int size){
 int main(){
     char arr[3] = {'a', 'b', 'c'}; 
     int startPos = 1;
-    int desLength = 0;
+    int desLength = 2;
     int arrSize = 3;
 
 
