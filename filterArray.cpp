@@ -23,14 +23,14 @@ int filterArray(int *arr, int len) {
                    return 0;
                }
            }
-           isFilter = 1;
        }
+        isFilter = 1;
    }
    return isFilter;
 } 
 int main(){
-    int arr[7] = {1, 2, 3, 4, 10, 11, 13};
-    int result = filterArray(arr, 7);
+    int arr[3] = {9, 6, 18};
+    int result = filterArray(arr, 3);
     if (result == 1)
     {
         cout << "The array is a filter array" << endl;
