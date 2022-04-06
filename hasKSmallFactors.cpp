@@ -7,15 +7,20 @@ bool hasKSmallFactors(int k, int n){
         return false;
     }
     
-    for (int i = 0; i < n / 2; i++)
+    for (int i = 2; i < n / 2; i++)
     {
         if(i<k && n%i == 0 && n/i < k){
+            
             return true;
         }
     }
     return false;
 }
 int main(){
-    bool result = hasKSmallFactors(7, 30);
-    cout << "result is " << result << endl;
+    bool result = hasKSmallFactors(6,30);
+    if(result){
+        cout << "true" << endl;
+    }else{
+        cout << "false" << endl;
+    }
 }
