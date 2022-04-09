@@ -26,6 +26,7 @@ int isTwin(int* arr, int arrSize){
     
     for (int i = 0; i < arrSize; i++){
         if(isPrime(arr[i]) && isPrime(arr[i] + 2)){
+
             while (leftCount < i )
             {
                 if(arr[leftCount] == arr[i]+ 2){
@@ -34,19 +35,19 @@ int isTwin(int* arr, int arrSize){
                 leftCount++;
             }    
             while (rightCount > i){
-                if(arr[leftCount] == arr[i]+ 2){
+                if(arr[rightCount] == arr[i]+ 2){
                     return 1;
                 }
                 rightCount --;
             }       
         }
-        return 0;
     }
+    return 0;
 }
 
 int main(){
     int arrSize = 5;
-    int arr[arrSize] ={3, 5, 8, 10, 27};
+    int arr[arrSize] ={3, 7, 8, 10, 27};
     int result = isTwin(arr, arrSize); 
     if(result){
         cout << "It is a twin array" << endl;
