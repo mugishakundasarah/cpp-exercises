@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int isPrime(int n) {
+ int isPrime(int n) {
     if (n <= 1)
     {
         return false;
