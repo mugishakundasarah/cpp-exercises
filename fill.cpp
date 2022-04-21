@@ -20,7 +20,7 @@ int main(){
     int length = 8;
     int array[length] = {1,2,3,5, 9, 12,-2,-1};
     int k = 8;
-    // int* newArr = fill(array, k, length);
+    int* newArr = fill(array, k, length);
 
     for (int i = 0; i < length; i++)
     {
